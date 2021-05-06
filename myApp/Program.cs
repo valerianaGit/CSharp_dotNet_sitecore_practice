@@ -6,7 +6,7 @@ namespace myApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            double x = 34.12;
                      Console.WriteLine("The current time is " + DateTime.Now);
                      if (args.Length > 0) {
 Console.WriteLine($"Hello, {args[0]}! My name is C#");
