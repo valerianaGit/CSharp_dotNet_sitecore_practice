@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/vruiz/Desktop/Develop/gradebook/src/GradeBook/GradeBook.csproj": {}
+    "/Users/vruiz/Desktop/Develop/gradebook/myApp/myApp.csproj": {}
   },
   "projects": {
-    "/Users/vruiz/Desktop/Develop/gradebook/src/GradeBook/GradeBook.csproj": {
+    "/Users/vruiz/Desktop/Develop/gradebook/myApp/myApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vruiz/Desktop/Develop/gradebook/src/GradeBook/GradeBook.csproj",
-        "projectName": "GradeBook",
-        "projectPath": "/Users/vruiz/Desktop/Develop/gradebook/src/GradeBook/GradeBook.csproj",
+        "projectUniqueName": "/Users/vruiz/Desktop/Develop/gradebook/myApp/myApp.csproj",
+        "projectName": "myApp",
+        "projectPath": "/Users/vruiz/Desktop/Develop/gradebook/myApp/myApp.csproj",
         "packagesPath": "/Users/vruiz/.nuget/packages/",
-        "outputPath": "/Users/vruiz/Desktop/Develop/gradebook/src/GradeBook/obj/",
+        "outputPath": "/Users/vruiz/Desktop/Develop/gradebook/myApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/vruiz/.nuget/NuGet/NuGet.Config"
