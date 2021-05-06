@@ -14,6 +14,13 @@ namespace myApp
 //Arrays
         //    Create => 
         double[] numbers = new double[3];
+//Access => 
+double first = numbers[0] = 12.7;
+numbers[1] = 13.4;
+numbers[2] = 14.5;
+var result  = numbers[0];
+result = result + numbers[1];
+result = result + numbers[2];
                      Console.WriteLine("The current time is " + DateTime.Now);
                      if (args.Length > 0) {
 Console.WriteLine($"Hello, {args[0]}! My name is C#");
