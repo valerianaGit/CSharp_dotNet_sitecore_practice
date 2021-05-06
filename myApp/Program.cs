@@ -7,6 +7,10 @@ namespace myApp
         static void Main(string[] args)
         {
             double x = 34.12;
+            // add 2 floats and print the result 
+            float float1 = 35.25f;
+            float float2 = 3.45F;
+            float summationOfFloats = float1 + float2;
                      Console.WriteLine("The current time is " + DateTime.Now);
                      if (args.Length > 0) {
 Console.WriteLine($"Hello, {args[0]}! My name is C#");
