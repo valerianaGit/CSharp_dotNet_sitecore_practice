@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5FhLBhMz1jfPEBDxdUB/EOjJBIyBT+lIKcxGozprYwBUlrjhkBv+zoQIaUmBUHbS9fh6/qkxmuphp1o0ktVn1A==",
+  "dgSpecHash": "0g8AKTse6L4ZraQEBVJws1aXHyKRTYsvOTH3OZ57JkpJDXiY3mqH3vMONTM2B3MrSR8Kywa76JYjFZGYWNCZkQ==",
   "success": true,
-  "projectFilePath": "/Users/vruiz/gradebook/src/GradeBook/GradeBook.csproj",
+  "projectFilePath": "/Users/vruiz/Desktop/Develop/gradebook/src/GradeBook/GradeBook.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
