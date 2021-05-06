@@ -11,6 +11,9 @@ namespace myApp
             float float1 = 35.25f;
             float float2 = 3.45F;
             float summationOfFloats = float1 + float2;
+//Arrays
+        //    Create => 
+        double[] numbers = new double[3];
                      Console.WriteLine("The current time is " + DateTime.Now);
                      if (args.Length > 0) {
 Console.WriteLine($"Hello, {args[0]}! My name is C#");
