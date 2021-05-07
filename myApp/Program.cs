@@ -37,7 +37,7 @@ resultForeach += number;
 
 //COLLECTIONS
 //LIST -> Mutable array 
-List<double> grades = new List<double>(); //init empty list 
+List<double> grades = new List<double>(){12.7, 13.4, 14.5, 8.9}; //initializer is the curly braces {}
 grades.Add(20.9); // add value to list 
 
             Console.WriteLine($"Summations of both float numbers is {summationOfFloats}");
