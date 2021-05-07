@@ -30,10 +30,10 @@ result += numbers[1];
 result = result + numbers[2];
 //for loop 
 var resultForeach = 0.0;
-foreach(double number in numbers) {
+foreach(double number in numbersb) {
 resultForeach += number;
-
 }
+Console.WriteLine($" average grade for numbersb list: {resultForeach / numbersb.Length}");
 
 //COLLECTIONS
 //LIST -> Mutable array 
