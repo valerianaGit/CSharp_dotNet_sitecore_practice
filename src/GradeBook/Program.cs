@@ -58,6 +58,7 @@ grades.Add(20.9); // add value to list
 var book = new Book("Valeria");
 book.addGrade(20.5);
 book.addGradesFrom(numbersa);
+book.showStatistics(numbersa);
 
             Console.WriteLine($"Summations of both float numbers is {summationOfFloats}");
                      Console.WriteLine("The current time is " + DateTime.Now);
