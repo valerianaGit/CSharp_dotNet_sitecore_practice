@@ -9,10 +9,6 @@ namespace GradeBook
         
         static void Main(string[] args)
         {
-//CLASSES AND OBJECTS 
-
-var book = new Book();
-book.addGrade(20.5);
 
 
 
@@ -56,6 +52,12 @@ Console.WriteLine($" average grade for numbersb list: {resultF:N3}");
 //LIST -> Mutable array 
 List<double> grades = new List<double>(){12.7, 13.4, 14.5, 8.9}; //initializer is the curly braces {}
 grades.Add(20.9); // add value to list 
+
+//CLASSES AND OBJECTS 
+
+var book = new Book("Valeria");
+book.addGrade(20.5);
+book.addGradesFrom(numbersa);
 
             Console.WriteLine($"Summations of both float numbers is {summationOfFloats}");
                      Console.WriteLine("The current time is " + DateTime.Now);
