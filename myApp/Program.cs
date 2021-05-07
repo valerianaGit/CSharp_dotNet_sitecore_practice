@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace myApp
 {
@@ -33,6 +34,11 @@ foreach(double number in numbers) {
 resultForeach += number;
 
 }
+
+//COLLECTIONS
+//LIST -> Mutable array 
+List<double> grades = new List<double>(); //init empty list 
+grades.Add(20.9); // add value to list 
 
             Console.WriteLine($"Summations of both float numbers is {summationOfFloats}");
                      Console.WriteLine("The current time is " + DateTime.Now);
