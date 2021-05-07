@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-namespace myApp{
+namespace GradeBook{
 class Book {
 static void methods() {
 
