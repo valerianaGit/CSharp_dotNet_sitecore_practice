@@ -5,8 +5,24 @@ namespace myApp
 {
     class Program
     {
+
+        
         static void Main(string[] args)
         {
+//CLASSES AND OBJECTS 
+
+var book = new Book();
+book.addGrade(20.5);
+
+
+
+
+
+
+
+
+
+            // SYNTAX!
             double x = 34.12;
             // add 2 floats and print the result 
             float float1 = 35.25f;
@@ -33,7 +49,7 @@ var resultF = 0.0;
 foreach(double number in numbersb) {
 resultF += number;
 }
-resultF /= numbersb.Length
+resultF /= numbersb.Length;
 Console.WriteLine($" average grade for numbersb list: {resultF:N3}");
 
 //COLLECTIONS
