@@ -29,11 +29,12 @@ var result  = numbers[0];
 result += numbers[1];
 result = result + numbers[2];
 //for loop 
-var resultForeach = 0.0;
+var resultF = 0.0;
 foreach(double number in numbersb) {
-resultForeach += number;
+resultF += number;
 }
-Console.WriteLine($" average grade for numbersb list: {resultForeach / numbersb.Length}");
+resultF /= numbersb.Length
+Console.WriteLine($" average grade for numbersb list: {resultF:N3}");
 
 //COLLECTIONS
 //LIST -> Mutable array 
