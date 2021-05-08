@@ -58,15 +58,18 @@ grades.Add(20.9); // add value to list
 var book = new Book("Valeria");
 book.addGrade(20.5);
 book.addGradesFrom(numbersa);
-book.showStatistics(numbersa);
+var stats = book.GetStatistics();
+Console.WriteLine($"Average of grades {stats.Average}");
+Console.WriteLine($"lowest grade {stats.Low}");
+Console.WriteLine($"highest of grade {stats.High:N1}");
 
-            Console.WriteLine($"Summations of both float numbers is {summationOfFloats}");
-                     Console.WriteLine("The current time is " + DateTime.Now);
-                     if (args.Length > 0) {
-Console.WriteLine($"Hello, {args[0]}! My name is C#");
-                     } else {
-                         Console.WriteLine("Hello, I am an else statement");
-                     }
+//             Console.WriteLine($"Summations of both float numbers is {summationOfFloats}");
+//                      Console.WriteLine("The current time is " + DateTime.Now);
+//                      if (args.Length > 0) {
+// Console.WriteLine($"Hello, {args[0]}! My name is C#");
+//                      } else {
+//                          Console.WriteLine("Hello, I am an else statement");
+//                      }
         }
     }
 }
