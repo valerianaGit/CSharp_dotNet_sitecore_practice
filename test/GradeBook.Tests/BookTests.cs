@@ -16,13 +16,11 @@ namespace GradeBook.Tests
               book.addGrade(77.3);
             //Act 
             var result = book.GetStatistics(); 
-            // DOES NOT return anything, so we need to refactor so:
-            // this method does too much 
 
             //Assert
-Assert.Equal(85.6, result.Average);
-Assert.Equal(77.3, result.Low);
-Assert.Equal(90.5, result.High);
+Assert.Equal(85.6, result.Average, 1);
+Assert.Equal(77.3, result.Low, 1);
+Assert.Equal(90.5, result.High, 1);
         }
     }
 }
