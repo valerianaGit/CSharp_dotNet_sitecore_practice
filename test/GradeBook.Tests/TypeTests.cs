@@ -46,6 +46,22 @@ namespace GradeBook.Tests
                   book = new Book(name); // create new value 
                   //book.Name = name; // not needed 
         }
+
+        [Fact] 
+        public void CSharpAlwaysPassesByValue()
+        {
+            //arrange 
+            var book1 = GetBook("Book 1");
+          //Act
+          GetBookSetName(book1, "New Name"); 
+          
+            //Assert
+       Assert.Equal("Book 1", book1.Name);
+        }
+        private void GetBookSetName(Book book, string name) {
+                  book = new Book(name); // create new value 
+                  //book.Name = name; // not needed 
+        }
         {
             //arrange // Act
             var book1 = GetBook("Book 1");//new Book("");
