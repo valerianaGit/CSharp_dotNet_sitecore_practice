@@ -7,7 +7,7 @@ namespace GradeBook.Tests
     {
         [Fact] // attribute , data attached to symbol that follows it i.e. Test1
         // means this is a unit test
-        public void Test1()
+        public void BookCalculatesAnAverageGrade()
         {
             //arrange
             var book = new Book("");
