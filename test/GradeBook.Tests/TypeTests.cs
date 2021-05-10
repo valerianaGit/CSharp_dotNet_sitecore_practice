@@ -62,6 +62,21 @@ namespace GradeBook.Tests
                   book = new Book(name); // create new value 
                   //book.Name = name; // not needed 
         }
+  [Fact] 
+        public void CanSetNameFromReference()
+        {
+            //arrange 
+            var book1 = GetBook("Book 1");
+          //Act
+          SetName(book1, "New Name"); // will change the name
+          
+            //Assert
+        Assert.NotEqual("Book 1", book1.Name);
+       Assert.Equal("New Name", book1.Name);
+        }
+        private void SetName(Book book, string name) {
+                    book.Name = name;
+        }
         {
             //arrange // Act
             var book1 = GetBook("Book 1");//new Book("");
