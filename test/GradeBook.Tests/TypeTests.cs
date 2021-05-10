@@ -3,24 +3,21 @@ using Xunit;
 
 namespace GradeBook.Tests
 {
-    public class BookTests
+    public class TypeTests
     {
-        [Fact] // attribute , data attached to symbol that follows it i.e. Test1
-        // means this is a unit test
+        [Fact] 
         public void Test1()
         {
-            //arrange
-            var book = new Book("");
-            book.addGrade(89.1);
-             book.addGrade(90.5);
-              book.addGrade(77.3);
-            //Act 
-            var result = book.GetStatistics(); 
-
+            //arrange // Act
+            var book1 = GetBook("Book 1");//new Book("");
+          var book2 = GetBook("Book 2");
+          
             //Assert
-Assert.Equal(85.6, result.Average, 1);
-Assert.Equal(77.3, result.Low, 1);
-Assert.Equal(90.5, result.High, 1);
+        Assert.Equal("Book 1", book1.Name);
+        Assert.Equal("Book 2", book2.Name);
+        }
+        Book GetBook(string name) {
+            return new Book(name)
         }
     }
 }
