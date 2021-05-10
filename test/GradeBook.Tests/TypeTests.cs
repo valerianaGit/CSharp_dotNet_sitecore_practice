@@ -5,6 +5,20 @@ namespace GradeBook.Tests
 {
     public class TypeTests
     {
+
+    [Fact] 
+        public void PassByReferenceWillBeChanged()
+        {
+            //arrange
+            var x = GetInt();
+             //Act
+        SetInt(ref x);         
+            //Assert   
+       Assert.Equal(42, x);
+        }
+         private void SetInt( ref int x) {
+                 x = 42;
+        }
         [Fact] 
         public void Test1()
         {
