@@ -20,7 +20,16 @@ namespace GradeBook.Tests
                  x = 42;
         }
         [Fact] 
-        public void Test1()
+        public void valueTypesinCSharp()
+        {
+            //arrange //Act
+        var x = GetInt();         
+            //Assert   
+       Assert.Equal(3, x);
+        }
+         private int GetInt( ) {
+                 return 3;
+        }
         {
             //arrange // Act
             var book1 = GetBook("Book 1");//new Book("");
