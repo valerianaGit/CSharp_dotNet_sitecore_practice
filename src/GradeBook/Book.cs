@@ -5,10 +5,10 @@ public class Book {
 
 //CONSTRUCTOR TO Book 
 private List<double> grades; // = new List<double>() {45.6, 78.3};
-private string name;
+public string Name; // public memeber should have an upper case name 
 public Book (string name) {
     grades = new List<double>();
-    this.name = name;
+    this.Name = name;
 }
 
 // methods 
