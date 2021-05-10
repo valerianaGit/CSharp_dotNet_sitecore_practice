@@ -77,14 +77,19 @@ namespace GradeBook.Tests
         private void SetName(Book book, string name) {
                     book.Name = name;
         }
+
+        [Fact] 
+        public void GetBookReturnsDifferentObjects()
         {
             //arrange // Act
-            var book1 = GetBook("Book 1");//new Book("");
-          var book2 = GetBook("Book 2");
+            var book1 = GetBook("Book 1"); //these are reference types to the object book
+          var book2 = GetBook("Book 2"); // we instantiated 2 diferent book objects 
           
             //Assert
         Assert.Equal("Book 1", book1.Name);
         Assert.Equal("Book 2", book2.Name);
+        Assert.NotSame(book1, book2);
+        }
         }
         Book GetBook(string name) {
             return new Book(name)
