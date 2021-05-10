@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/vruiz/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj": {}
+    "/Users/vruiz/Desktop/Develop/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj": {}
   },
   "projects": {
-    "/Users/vruiz/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj": {
+    "/Users/vruiz/Desktop/Develop/gradebook/src/GradeBook/GradeBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vruiz/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj",
-        "projectName": "GradeBook.Tests",
-        "projectPath": "/Users/vruiz/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj",
+        "projectUniqueName": "/Users/vruiz/Desktop/Develop/gradebook/src/GradeBook/GradeBook.csproj",
+        "projectName": "GradeBook",
+        "projectPath": "/Users/vruiz/Desktop/Develop/gradebook/src/GradeBook/GradeBook.csproj",
         "packagesPath": "/Users/vruiz/.nuget/packages/",
-        "outputPath": "/Users/vruiz/gradebook/test/GradeBook.Tests/obj/",
+        "outputPath": "/Users/vruiz/Desktop/Develop/gradebook/src/GradeBook/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/vruiz/.nuget/NuGet/NuGet.Config"
@@ -26,6 +26,62 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/vruiz/Desktop/Develop/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vruiz/Desktop/Develop/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj",
+        "projectName": "GradeBook.Tests",
+        "projectPath": "/Users/vruiz/Desktop/Develop/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj",
+        "packagesPath": "/Users/vruiz/.nuget/packages/",
+        "outputPath": "/Users/vruiz/Desktop/Develop/gradebook/test/GradeBook.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/vruiz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/vruiz/Desktop/Develop/gradebook/src/GradeBook/GradeBook.csproj": {
+                "projectPath": "/Users/vruiz/Desktop/Develop/gradebook/src/GradeBook/GradeBook.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
