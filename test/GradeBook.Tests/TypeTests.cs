@@ -30,6 +30,22 @@ namespace GradeBook.Tests
          private int GetInt( ) {
                  return 3;
         }
+[Fact] 
+        public void CSharpCanPassByReference()
+        {
+            //arrange 
+            var book1 = GetBook("Book 1");
+          //Act
+          GetBookSetName(ref book1, "New Name"); // will change the name
+          
+            //Assert
+    
+       Assert.Equal("New Name", book1.Name);
+        }
+         private void GetBookSetName( ref Book book, string name) {
+                  book = new Book(name); // create new value 
+                  //book.Name = name; // not needed 
+        }
         {
             //arrange // Act
             var book1 = GetBook("Book 1");//new Book("");
