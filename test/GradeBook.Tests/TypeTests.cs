@@ -90,9 +90,22 @@ namespace GradeBook.Tests
         Assert.Equal("Book 2", book2.Name);
         Assert.NotSame(book1, book2);
         }
+
+          [Fact] 
+        public void TwoVarsCanReferenceSameObject()
+        {
+            //arrange // Act
+            var book1 = GetBook("Book 1");// variables always hold VALUES, BUT those values can be pointers
+          var book2 = book1;
+          
+            //Assert
+        Assert.Equal("Book 1", book1.Name);
+        Assert.Equal("Book 1", book2.Name);
+        Assert.Same(book1,book2);
+        Assert.True(Object.ReferenceEquals(book1, book2)); // these 2 are the exact same reference
         }
         Book GetBook(string name) {
-            return new Book(name)
+            return new Book(name);
         }
     }
 }
