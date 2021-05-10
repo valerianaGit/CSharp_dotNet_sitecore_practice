@@ -4,10 +4,10 @@ namespace GradeBook{
 public class Book {
 
 //CONSTRUCTOR TO Book 
-private List<double> numbers; // = new List<double>() {45.6, 78.3};
+private List<double> grades; // = new List<double>() {45.6, 78.3};
 private string name;
 public Book (string name) {
-    numbers = new List<double>();
+    grades = new List<double>();
     this.name = name;
 }
 
@@ -15,7 +15,7 @@ public Book (string name) {
 public void addGrade (double number) {
     //validate the input 
     if (number > 0.0) {
-numbers.Add(number);
+grades.Add(number);
 Console.WriteLine($"grade added!: {number}");
     }
 }
@@ -27,20 +27,20 @@ public Statistics GetStatistics() {
 result.Average = 0.0;
 result.Low = double.MaxValue;
 result.High = double.MinValue;
-    foreach(double grade in numbers) {
+    foreach(double grade in grades) {
 result.Low  = Math.Min(grade, result.Low);
 result.High = Math.Max(grade, result.High);
 result.Average += grade;
     }
-     result.Average /= numbers.Count;
+     result.Average /= grades.Count;
      return result;
 }
 
 public void addGradesFrom(double[] numbers) {
 foreach(double number in numbers ) {
-this.numbers.Add(number);
+this.grades.Add(number);
 }
-Console.WriteLine($"new values in array {this.numbers}");
+Console.WriteLine($"new values in array {this.grades}");
 }
 
 }
